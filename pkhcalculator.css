@@ -17,10 +17,9 @@
   flex-direction: column;
   height: 100vh;
   gap: 100px;
-  
 }
 .q1 {
-  width: 550px;
+  width: 551px;
   height: 750px;
   display: flex;
   justify-content: space-evenly;
