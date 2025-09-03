@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pk calculator</title>
+    <link rel="stylesheet" href="pkhcalculator.css" />
+  </head>
+  <body class="q">
+    <script>
+      const ug = document.createElement("p");
+      ug.classList.add("ugnii");
+      ug.innerText = "TOO BODOTSGOOY";
+
+      const border = document.createElement("div");
+      border.classList.add("q1");
+
+      const irina = document.createElement("div");
+      irina.classList.add("q2");
+
+      const irinichka = document.createElement("div");
+      irinichka.classList.add("q3");
+
+      const baga1 = document.createElement("button");
+      baga1.classList.add("r1");
+      baga1.innerText = "C";
+      baga1.onclick = ac;
+
+      const baga2 = document.createElement("button");
+      baga2.classList.add("r1");
+      baga2.innerText = "( )";
+
+      const baga3 = document.createElement("button");
+      baga3.classList.add("r1");
+      baga3.innerText = "%";
+      baga3.onclick = huvil;
+
+      const baga4 = document.createElement("button");
+      baga4.classList.add("r1");
+      baga4.innerText = "/";
+      baga4.onclick = huvaaa;
+
+      const baga5 = document.createElement("button");
+      baga5.classList.add("r1");
+      baga5.innerText = 7;
+      baga5.onclick = doloo;
+
+      const baga6 = document.createElement("button");
+      baga6.classList.add("r1");
+      baga6.innerText = 8;
+      baga6.onclick = naim;
+
+      const baga7 = document.createElement("button");
+      baga7.classList.add("r1");
+      baga7.innerText = 9;
+      baga7.onclick = es;
+
+      const baga8 = document.createElement("button");
+      baga8.classList.add("r1");
+      baga8.innerText = "X";
+      baga8.onclick = urj;
+
+      const baga9 = document.createElement("button");
+      baga9.classList.add("r1");
+      baga9.innerText = 4;
+      baga9.onclick = dorov;
+
+      const baga10 = document.createElement("button");
+      baga10.classList.add("r1");
+      baga10.innerText = 5;
+      baga10.onclick = tav;
+
+      const baga11 = document.createElement("button");
+      baga11.classList.add("r1");
+      baga11.innerText = 6;
+      baga11.onclick = zurgaa;
+
+      const baga12 = document.createElement("button");
+      baga12.classList.add("r1");
+      baga12.innerText = "-";
+      baga12.onclick = has;
+
+      const baga13 = document.createElement("button");
+      baga13.classList.add("r1");
+      baga13.innerText = 1;
+      baga13.onclick = neg;
+
+      const baga14 = document.createElement("button");
+      baga14.classList.add("r1");
+      baga14.innerText = 2;
+      baga14.onclick = hoer;
+
+      const baga15 = document.createElement("button");
+      baga15.classList.add("r1");
+      baga15.innerText = 3;
+      baga15.onclick = gurav;
+
+      const baga16 = document.createElement("button");
+      baga16.classList.add("r1");
+      baga16.innerText = "+";
+      baga16.onclick = addi;
+
+      const baga17 = document.createElement("button");
+      baga17.classList.add("r1");
+      baga17.innerText = "+/-";
+      baga17.onclick = munu;
+
+      const baga18 = document.createElement("button");
+      baga18.classList.add("r1");
+      baga18.innerText = 0;
+      baga18.onclick = teg;
+
+      const baga19 = document.createElement("button");
+      baga19.classList.add("r1");
+      baga19.innerText = ".";
+      baga19.onclick = nama;
+
+      const baga20 = document.createElement("button");
+      baga20.classList.add("r1");
+      baga20.innerHTML = "=";
+      baga20.onclick = ajil;
+
+      let add;
+      let action;
+      function addi() {
+        const tmp = document.getElementsByClassName("q2")[0].innerHTML;
+        irina.innerHTML = "";
+        add = tmp;
+        action = "+";
+        // too2 = document.getElementsByClassName("q2")[0].innerHTML;
+      }
+
+      // let minus;
+      // let maction;
+      function has() {
+        const tmp = document.getElementsByClassName("q2")[0].innerHTML;
+        irina.innerHTML = "";
+        add = tmp;
+        action = "-";
+      }
+
+      // let mult;
+      // let multaction;
+      function urj() {
+        const tmp = document.getElementsByClassName("q2")[0].innerHTML;
+        irina.innerHTML = "";
+        add = tmp;
+        action = "X";
+      }
+
+      // let huvaa;
+      // let haction;
+      function huvaaa() {
+        const tmp = document.getElementsByClassName("q2")[0].innerHTML;
+        irina.innerHTML = "";
+        add = tmp;
+        action = "/";
+      }
+
+      function huvil() {
+        const tmp = document.getElementsByClassName("q2")[0].innerHTML;
+        irina.innerHTML = "";
+        add = tmp;
+        action = "%";
+      }
+
+      function ac() {
+        irina.innerHTML = "";
+      }
+
+      let baayaa = "";
+      function ajil() {
+        baayaa = document.getElementsByClassName("q2")[0].innerHTML;
+
+        if (action == "+") {
+          irina.innerHTML = Number(add) + Number(baayaa);
+        }
+        if (action == "-") {
+          irina.innerHTML = Number(add) - Number(baayaa);
+        }
+        if (action == "X") {
+          irina.innerHTML = Number(add) * Number(baayaa);
+        }
+        if (action == "/") {
+          irina.innerHTML = Number(add) / Number(baayaa);
+        }
+        if (action == "%") {
+          irina.innerHTML = (Number(add) / 100) * Number(baayaa);
+        }
+      }
+
+      let nami = "";
+      function nama() {
+        nami = ".";
+        irina.innerHTML += ".";
+      }
+
+      let mun = "";
+      function munu() {
+        mun = "-";
+        irina.innerHTML += "-";
+      }
+
+      let num7;
+      function doloo() {
+        num7 = 7;
+        irina.innerHTML += 7;
+      }
+
+      let num8;
+      function naim() {
+        num8 = 8;
+        irina.innerHTML += 8;
+      }
+
+      let num9;
+      function es() {
+        num9 = 9;
+        irina.innerHTML += 9;
+      }
+
+      let num4;
+      function dorov() {
+        num4 = 4;
+        irina.innerHTML += 4;
+      }
+
+      let num5;
+      function tav() {
+        num5 = 5;
+        irina.innerHTML += 5;
+      }
+
+      let num6;
+      function zurgaa() {
+        num6 = 6;
+        irina.innerHTML += 6;
+      }
+
+      let num1;
+      function neg() {
+        num1 = 1;
+        irina.innerHTML += 1;
+      }
+
+      let num2;
+      function hoer() {
+        num2 = 2;
+        irina.innerHTML += 2;
+      }
+
+      let num3;
+      function gurav() {
+        num3 = 3;
+        irina.innerHTML += 3;
+      }
+
+      let num0;
+      function teg() {
+        num0 = 0;
+        irina.innerHTML += 0;
+      }
+
+      irinichka.appendChild(baga1);
+
+      irinichka.appendChild(baga2);
+
+      irinichka.appendChild(baga3);
+
+      irinichka.appendChild(baga4);
+
+      irinichka.appendChild(baga5);
+
+      irinichka.appendChild(baga6);
+
+      irinichka.appendChild(baga7);
+
+      irinichka.appendChild(baga8);
+
+      irinichka.appendChild(baga9);
+
+      irinichka.appendChild(baga10);
+
+      irinichka.appendChild(baga11);
+
+      irinichka.appendChild(baga12);
+
+      irinichka.appendChild(baga13);
+
+      irinichka.appendChild(baga14);
+
+      irinichka.appendChild(baga15);
+
+      irinichka.appendChild(baga16);
+
+      irinichka.appendChild(baga17);
+
+      irinichka.appendChild(baga18);
+
+      irinichka.appendChild(baga19);
+
+      irinichka.appendChild(baga20);
+
+      border.appendChild(irina);
+
+      border.appendChild(irinichka);
+
+      document.body.appendChild(ug);
+
+      document.body.appendChild(border);
+    </script>
+  </body>
+</html>
