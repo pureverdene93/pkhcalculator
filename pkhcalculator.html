@@ -171,22 +171,21 @@
       let baayaa = "";
       function ajil() {
         baayaa = document.getElementsByClassName("q2")[0].innerHTML;
-        let had = irina.innerHTML;
 
         if (action == "+") {
-          had = Number(add) + Number(baayaa);
+          irina.innerHTML = Number(add) + Number(baayaa);
         }
         if (action == "-") {
-          had = Number(add) - Number(baayaa);
+          irina.innerHTML = Number(add) - Number(baayaa);
         }
         if (action == "X") {
-          had = Number(add) * Number(baayaa);
+          irina.innerHTML = Number(add) * Number(baayaa);
         }
         if (action == "/") {
-          had = Number(add) / Number(baayaa);
+          irina.innerHTML = Number(add) / Number(baayaa);
         }
         if (action == "%") {
-          had = (Number(add) / 100) * Number(baayaa);
+          irina.innerHTML = (Number(add) / 100) * Number(baayaa);
         }
       }
 
